@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/logo.jpg">
+    <title>Мерч - Интернет магазин</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#hero" class="logo">
+                <img src="./img/logo.jpg" alt="Логотип магазина" width="50" height="50">
+                <span>Мерч</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#section1">Худи</a></li>
+                    <li><a href="#section2">Футболки</a></li>
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Распродажа</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="search-icon">
+                    <i class="fas fa-search"></i>  <!-- Search Icon -->
+                </a>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i> <!-- Cart Icon -->
+                    <span class="cart-count">0</span>
+                </a>
+                <!-- User icon replaced with profile or login/register -->
+                <div id="user-area">
+                    <a href="./lkab.html" id="login-register-link" class="user-icon">
+                        <i class="fas fa-user"></i> <!-- Default User Icon -->
+                    </a>
+                </div>  
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-background"></div>
+            <div class="container hero-content">
+                <h1>Найди свой идеальный мерч!</h1>
+                <p>Уникальные худи, футболки и аксессуары с твоими любимыми персонажами и символикой.</p>
+                <a href="#section1" class="btn btn-primary">Смотреть коллекцию</a>
+            </div>
+        </section>
+
+        <section class="section merch-section"  id="section1">
+            <div class="container" class="aos" data-aos="fade-down">
+                <h2 class="aos" data-aos="fade-left">Худи</h2>
+                <div class="merch-slider-container">
+                    <div class="merch-slider">
+                        <div class="merch-item" data-product-id="1">
+                            <a href="">
+                                <img src="./img/hudi1.jpg" alt="Черное худи с логотипом" loading="lazy">
+                                <div class="merch-item-details">
+                                    <h3>Худи "Классика"</h3>
+                                    <p class="price">1999 ₽</p>
+                                    <button class="btn btn-secondary add-to-cart">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="merch-item" data-product-id="2">
+                            <a href="">
+                                <img src="./img/hudi2.webp" alt="Серое худи с принтом" loading="lazy">
+                                <div class="merch-item-details">
+                                    <h3>Худи "Городской стиль"</h3>
+                                    <p class="price">2299 ₽</p>
+                                    <button class="btn btn-secondary add-to-cart">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="merch-item" data-product-id="3">
+                            <a href="">
+                                <img src="./img/result_hudi3..jpg" alt="Белое худи с вышивкой" loading="lazy">
+                                <div class="merch-item-details">
+                                    <h3>Худи "Минимализм"</h3>
+                                    <p class="price">2499 ₽</p>
+                                    <button class="btn btn-secondary add-to-cart">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                         <div class="merch-item" data-product-id="4">
+                            <a href="">
+                                <img src="./img/result_hudi4.jpg" alt="Красное худи с карманом" loading="lazy">
+                                <div class="merch-item-details">
+                                    <h3>Худи "Яркость"</h3>
+                                    <p class="price">2199 ₽</p>
+                                    <button class="btn btn-secondary add-to-cart">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                         <div class="merch-item" data-product-id="5">
+                            <a href="">
+                                <img src="./img/hudi5.webp" alt="Зеленое худи с капюшоном" loading="lazy">
+                                <div class="merch-item-details">
+                                    <h3>Худи "Лесной мотив"</h3>
+                                    <p class="price">2399 ₽</p>
+                                    <button class="btn btn-secondary add-to-cart">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="nav-button left">&#10094;</button>
+                    <button class="nav-button right">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section merch-section" class="aos" data-aos="fade-down" id="section2">
+            <div class="container">
+                <h2>Футболки</h2>
+                <div class="merch-slider-container">
+                    <div class="merch-slider">
+                         <div class="merch-item" data-product-id="6">
+                            <a href=""><img src="./img/fut1.png" alt="Белая футболка с принтом значка" loading="lazy">
+                                <div class="merch-item-details">
+                                    <h3>Футболка "Значки"</h3>
+                                    <p class="price">999 ₽</p>
+                                    <button class="btn btn-secondary add-to-cart">В корзину</button>
+                                </div></a>
+                        </div>
+
+                        <div class="merch-item" data-product-id="7">
+                            <a href=""><img src="./img/fut2.png" alt="Черная футболка с принтом брелка" loading="lazy">
+                                <div class="merch-item-details">
+                                    <h3>Футболка "Брелки"</h3>
+                                    <p class="price">1099 ₽</p>
+                                    <button class="btn btn-secondary add-to-cart">В корзину</button>
+                                </div></a>
+                        </div>
+
+                        <div class="merch-item" data-product-id="8">
+                            <a href=""><img src="./img/fut3.webp" alt="Серая футболка с принтом чехла" loading="lazy">
+                                <div class="merch-item-details">
+                                    <h3>Футболка "Чехлы"</h3>
+                                    <p class="price">899 ₽</p>
+                                    <button class="btn btn-secondary add-to-cart">В корзину</button>
+                                </div></a>
+                        </div>
+                    </div>
+                    <button class="nav-button left">&#10094;</button>
+                    <button class="nav-button right">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Личный магазин. Все права защищены.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Модальное окно личного кабинета -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вход</h2>
+            <form id="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </form>
+            <p>Еще нет аккаунта? <a href="#" id="show-register">Зарегистрироваться</a></p>
+        </div>
+    </div>
+
+    <!-- Модальное окно регистрации -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="register-form">
+                <label for="new_username">Имя пользователя:</label>
+                <input type="text" id="new_username" name="new_username" required><br><br>
+                <label for="new_email">Email:</label>
+                <input type="email" id="new_email" name="new_email" required><br><br>
+                <label for="new_password">Пароль:</label>
+                <input type="password" id="new_password" name="new_password" required><br><br>
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            </form>
+            <p>Уже есть аккаунт? <a href="#" id="show-login">Войти</a></p>
+        </div>
+    </div>
+
+    <div id="notification" class="notification">
+        <span id="notification-message"></span>
+    </div>
+    
+    <div id="cart-popup" class="cart-popup">
+        <h2>Корзина</h2>
+        <div id="cart-items">
+            <!-- Здесь будут отображаться товары -->
+            <p>Корзина пуста</p>
+        </div>
+        <a href="./cart.html" class="btn btn-primary">Перейти в корзину</a>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="akk.js "></script>
+    <script src="scrol.js"></script>
+</body>
+</html>

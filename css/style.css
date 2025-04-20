@@ -1,0 +1,607 @@
+/* Resetting styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Layout container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header styles */
+.header {
+    background-color: rgba(255, 255, 255, 0.9); /* Add transparency */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(5px); /* Add blur effect */
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;  /* Increase padding */
+    padding-bottom: 15px; /* Increase padding */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem; /* Increase font size */
+    color: #343a40;
+    font-weight: 700; /* Use a bolder font weight */
+}
+
+.logo img {
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 60px;   /* Increase logo size */
+    height: 60px;  /* Increase logo size */
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 25px; /* Increase margin */
+}
+
+.main-nav a {
+    color: #343a40;
+    padding: 7px 15px; /* Increase padding */
+    border-radius: 7px; /* Round the corners */
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: #e9ecef;  /* Lighten hover color */
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.header-actions a {
+    margin-left: 20px; /* Increase margin */
+    color: #495057;
+    position: relative;
+    font-size: 1.3rem;  /* Increase icon size */
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(to right, #4a148c, #7d2da0);
+    color: #fff;
+    padding: 17% 0; /* Increase padding */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+  }
+
+.hero h1 {
+    font-size: 3.5rem; /* Increase font size */
+    margin-bottom: 25px; /* Increase margin */
+    font-weight: 800; /* Use a bolder font weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
+}
+
+.hero p {
+    font-size: 1.3rem; /* Increase font size */
+    margin-bottom: 40px; /* Increase margin */
+    line-height: 1.8; /* Increase line height */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 15px 30px; /* Increase padding */
+    font-size: 1.1rem; /* Increase font size */
+    font-weight: 600; /* Use a semi-bold font weight */
+    border-radius: 7px; /* Round the corners */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #ff7043;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #4a148c;
+    border: 2px solid #4a148c;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+.quantity-btn:hover {
+    background-color: #ddd;
+}
+
+/* Section styles */
+.section {
+    padding: 100px 0; /* Increase padding */
+}
+
+.section h2 {
+    font-size: 3rem; /* Increase font size */
+    margin-bottom: 50px; /* Increase margin */
+    text-align: center;
+    color: #4a148c;
+}
+
+/* Merch section */
+.merch-section {
+    background-color: #f8f9fa;
+}
+
+.merch-slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.merch-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding-bottom: 25px; /* Increase padding */
+}
+
+.merch-item {
+    flex: 0 0 33.333%; /* Show 3 items per slide */
+    padding: 25px; /* Increase padding */
+    box-sizing: border-box;
+}
+
+.merch-item a{
+    display: block;
+    height: 100%;
+}
+
+.merch-item img {
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow */
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Increase margin */
+}
+
+.merch-item:hover img {
+    transform: scale(1.07);
+}
+
+.merch-item-details {
+    text-align: center;
+}
+
+.merch-item-details h3 {
+    font-size: 1.3rem; /* Increase font size */
+    margin-bottom: 7px; /* Increase margin */
+    color: #343a40;
+}
+
+.merch-item-details .price {
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: 600; /* Use a semi-bold font weight */
+    color: #4a148c;
+    margin-bottom: 20px; /* Increase margin */
+}
+
+/* Slider navigation */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 12px 20px; /* Increase padding */
+    font-size: 1.7rem; /* Increase font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+    border-radius: 7px; /* Round the corners */
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-button.left {
+    left: 20px; /* Increase left position */
+}
+
+.nav-button.right {
+    right: 20px; /* Increase right position */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #495057; /* Use a lighter color */
+    color: #fff;
+    padding: 35px 0; /* Increase padding */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 1rem; /* Increase font size */
+}
+
+.footer-nav ul {
+    display: flex;
+}
+
+.footer-nav li {
+    margin-left: 20px; /* Increase margin */
+}
+
+.footer-nav a {
+    color: #fff;
+    padding: 7px 15px; /* Increase padding */
+    border-radius: 7px; /* Round the corners */
+    transition: background-color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .merch-item {
+        flex: 0 0 50%; /* Show 2 items per slide on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .merch-item {
+        flex: 0 0 100%; /* Show 1 item per slide on small screens */
+    }
+}
+
+/* Modal Styles */
+.modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        max-width: 500px; /* Limit the width for larger screens */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+}
+
+/* The Close Button */
+.close {
+        color: #aaa;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+}
+
+/* Form Styles (inside modal) */
+form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+}
+form input[type=text],
+form input[type=email],
+form input[type=password] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ced4da;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #495057;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+form input[type=text]:focus, /* New Style */
+form input[type=email]:focus,
+form input[type=password]:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+
+
+form button[type=submit] {
+        background-color: #5cb85c;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        width: 100%;
+        transition: background-color 0.3s ease;
+}
+
+form button[type=submit]:hover {
+        background-color: #449d44;
+}
+
+/* Styling for links to switch between login and register */
+p a {
+        color: #007bff;
+        text-decoration: none;
+}
+
+p a:hover {
+        text-decoration: underline;
+}
+
+/* User Area Styles */
+#user-area .user-info {
+    display: flex;
+    align-items: center;
+}
+
+#user-area .user-info a.profile-link {
+    color: #4a148c; /* Фиолетовый цвет для ссылки на профиль */
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s ease;
+}
+
+#user-area .user-info a.profile-link:hover {
+    color: #ff7043; /* Оранжевый цвет при наведении */
+    text-decoration: underline;
+}
+
+#user-area .user-info button {
+    background-color: #dc3545; /* Красный цвет для кнопки выхода */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#user-area .user-info button:hover {
+    background-color: #c82333; /* Более темный красный при наведении */
+}
+
+/* Иконки */
+#user-area .user-info i {
+    margin-right: 5px; /* Отступ между иконкой и текстом */
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(-20px);
+}
+
+.notification.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.notification.error {
+    background-color: #F44336;
+}
+
+.notification-message {
+    font-weight: bold;  
+}
+.cart-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    z-index: 1000;
+    display: none;
+}
+
+.cart-popup.show {
+    display: block;
+}
+
+.cart-popup h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #4a148c;
+}
+
+#cart-items {
+    margin-bottom: 15px;
+}
+
+.cart-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-total {
+    font-weight: bold;
+    text-align: right;
+}
+.remove-from-cart {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.remove-from-cart:hover {
+    background-color: #c82333;
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.quantity-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.cart-icon.animate {
+    animation: cartAnimation 0.5s ease-in-out; /* Анимация 0.5 секунды */
+  }
+  
+  @keyframes cartAnimation {
+    0% { transform: scale(1); } /* Начальный размер */
+    50% { transform: scale(1.2); } /* Максимальное увеличение */
+    100% { transform: scale(1); } /* Возврат к начальному размеру */
+  }
+  ::-webkit-scrollbar {
+    width: 9px; /* Ширина скроллбара */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет трека */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a148c; /* Цвет бегунка */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3d1173; /* Цвет бегунка при наведении */
+}
